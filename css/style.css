@@ -1,0 +1,258 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  
+	font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.hero-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.hero-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.hero-text h1 {
+	margin-bottom: 5px;
+	text-shadow: 3px 3px 7px rgb(172, 66, 101);
+	color: rgb(172, 66, 101);
+}
+
+.hero-text span {
+	text-transform: uppercase;
+	color: rgb(145, 46, 79);
+}
+
+section
+
+.hero-text p {
+	color: rgb(172, 66, 101);
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+}
+
+
+
+.section-title{
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgb(172, 66, 101);
+}
+
+section {
+  scroll-margin-top: 80px ;
+}
+
+/* nawigacja */
+nav {
+  position: sticky;
+  top: 0;
+	height: 60px;
+	line-height: 60px;
+	background-color: #eec0c6;
+	text-align: center;
+  z-index: 10;
+}
+
+.burger-icon {
+	display: block;
+	margin-left: auto;
+	padding: 0 30px;
+	line-height: 60px;
+	font-size: 30px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	color: rgb(187, 88, 121);
+}
+
+.nav-items {
+	display: none;
+}
+
+/* header */
+header {
+	position: relative;
+	background-image: url('../img/baby-hand-small.jpg');
+	height: 330px;
+	background-size: cover;
+	background-position: center;
+}
+
+/* main  */
+
+main {
+  margin: 60px 0px;
+}
+
+/* sekcja o nas  */
+.about-us-info {
+  margin-bottom: 10px;
+  padding: 0 50px;
+  text-align: justify;
+}
+
+
+/* mama  */
+.products {
+  margin: 60px auto;
+}
+
+.product {
+  position: relative;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  font-size: 16px;
+}
+
+.dzieci .hero-text h3{
+  
+  text-align: left; 
+  color:rgb(116, 30, 119);
+  background-color: #b3728b6e;}
+
+  .product:hover h3 {
+    transform: scale(1.5);
+  }
+
+
+.product h3 {
+  text-transform: uppercase;
+  transition: transform .3s;
+}
+
+.mama {
+  background-image: url('../img/mama-small.jpg');
+}
+.noworodek {
+  background-image: url('../img/noworodek\ small.jpg');
+  
+ }
+.niemowlak {
+  background-image: url('../img/niemowlak-small.jpg');
+}
+.dziecko1-3 {
+  background-image: url('../img/dzieci1-3-small.jpg');
+}
+.dziecko3-5 {
+  background-image: url('../img/dzieci3-5-small.jpg');
+}
+
+
+/* kontakt  */
+
+.contact{
+  text-align: center;
+}
+
+.contact h3{
+  margin: 20px 0 5px;
+  text-transform: uppercase;
+  color: rgb(172, 66, 101);
+}
+
+/* footer  */
+footer {
+  text-align: center;
+  padding: 30px 10px;
+  background-color: #eec0c6;
+}
+
+
+/* media  */
+
+@media (min-width: 768px) {
+	.burger-icon {
+		display: none;
+	}
+	.nav-items {
+		display: block;
+	}
+
+	.nav-items a {
+		padding: 0 30px;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: rgb(187, 88, 121);
+		transition: color 0.3s;
+	}
+
+	.nav-items a:hover {
+		color: rgb(138, 23, 61);
+	}
+
+	.header {
+		height: 400px;
+
+		background-image: url('../img/baby-hand-big.jpg');
+		background-size: cover;
+		background-position: center;
+	}
+
+	.hero-text h1 {
+		font-size: 36px;
+	}
+	.hero-text p {
+		font-size: 18px;
+	}
+
+  .product h3 {
+   font-size: 24px;
+}
+}
+
+@media (min-width: 992px) {
+
+  .products-box {
+    font-size: 0;
+  }
+	.product {
+    display: inline-block;
+    width: 50%;
+  }
+
+  .product-mama{
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+	.hero-text h1 {
+		font-size: 42px;
+	}
+	.hero-text p {
+		font-size: 21px;
+	}
+  .header {
+    height: 500px;
+  }
+}
+
+
