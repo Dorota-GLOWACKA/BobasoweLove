@@ -1,3 +1,6 @@
+:root {
+	--hero-text-color: rgb(172, 66, 101);
+}
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -5,11 +8,10 @@
 }
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
-  
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -33,10 +35,26 @@ body {
 	transform: translate(-50%, -50%);
 }
 
+.hero-text p {
+	color: var(--hero-text-color);
+	font-weight: bold;
+	font-style: italic;
+}
+
+.hero-text-dzieci h3 {
+	position: absolute;
+	left: 45px;
+	top: 5px;
+	margin-top: 9px;
+	padding: 10px;
+	background-color: rgba(182, 114, 172, 0.3);
+	color: var(--hero-text-color);
+}
+
 .hero-text h1 {
 	margin-bottom: 5px;
-	text-shadow: 3px 3px 7px rgb(172, 66, 101);
-	color: rgb(172, 66, 101);
+	text-shadow: 3px 3px 7px var(--hero-text-color);
+	color: var(--hero-text-color);
 }
 
 .hero-text span {
@@ -44,38 +62,37 @@ body {
 	color: rgb(145, 46, 79);
 }
 
-section
-
-.hero-text p {
-	color: rgb(172, 66, 101);
+section .hero-text p {
+	color: var(--hero-text-color);
 	font-weight: bold;
 	font-style: italic;
 	text-align: center;
 }
 
-
-
-.section-title{
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  text-align: center;
-  color: rgb(172, 66, 101);
+.section-title {
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	color: var(--hero-text-color);
+	text-decoration: none;
 }
 
 section {
-  scroll-margin-top: 80px ;
+	scroll-margin-top: 80px;
 }
 
 /* nawigacja */
 nav {
-  position: sticky;
-  top: 0;
+	position: sticky;
+	top: 0;
 	height: 60px;
 	line-height: 60px;
 	background-color: #eec0c6;
 	text-align: center;
-  z-index: 10;
+	z-index: 10;
 }
+
+
 
 .burger-icon {
 	display: block;
@@ -93,6 +110,8 @@ nav {
 	display: none;
 }
 
+
+
 /* header */
 header {
 	position: relative;
@@ -102,87 +121,117 @@ header {
 	background-position: center;
 }
 
+
+
 /* main  */
 
 main {
-  margin: 60px 0px;
+	margin: 60px 0px;
 }
 
 /* sekcja o nas  */
 .about-us-info {
-  margin-bottom: 10px;
-  padding: 0 50px;
-  text-align: justify;
+	margin-bottom: 10px;
+	padding: 0 50px;
+	text-align: justify;
 }
 
+.about-us h2+p::first-letter {
+	color: var(--hero-text-color);
+  background-color: #eec0c6;
+  border-radius: 2px;
+  box-shadow: 3px 3px 0 var(--hero-text-color);
+  font-size: 300%;
+  padding: 6px 6px;
+  margin-right: 6px;
+  float:left;
+	
+}
 
 /* mama  */
 .products {
-  margin: 60px auto;
+	margin: 60px auto;
 }
 
 .product {
-  position: relative;
-  height: 300px;
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  font-size: 16px;
+	position: relative;
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	font-size: 16px;
 }
 
-.dzieci .hero-text h3{
-  
-  text-align: left; 
-  color:rgb(116, 30, 119);
-  background-color: #b3728b6e;}
+.productSP {
+	position: relative;
+	height: 50px;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	font-size: 16px;
+}
 
-  .product:hover h3 {
-    transform: scale(1.5);
-  }
-
+.product:hover h3 {
+	transform: scale(1.5);
+}
 
 .product h3 {
-  text-transform: uppercase;
-  transition: transform .3s;
+	text-transform: uppercase;
+	transition: transform 0.3s;
 }
 
 .mama {
-  background-image: url('../img/mama-small.jpg');
+	background-image: url('../img/mama-small.jpg');
 }
 .noworodek {
-  background-image: url('../img/noworodek\ small.jpg');
-  
- }
+	background-image: url('../img/noworodek\ small.jpg');
+}
 .niemowlak {
-  background-image: url('../img/niemowlak-small.jpg');
+	background-image: url('../img/niemowlak-small.jpg');
 }
 .dziecko1-3 {
-  background-image: url('../img/dzieci1-3-small.jpg');
+	background-image: url('../img/dzieci1-3-small.jpg');
 }
 .dziecko3-5 {
-  background-image: url('../img/dzieci3-5-small.jpg');
+	background-image: url('../img/dzieci3-5-small.jpg');
 }
-
 
 /* kontakt  */
 
-.contact{
-  text-align: center;
+.contact {
+	text-align: center;
 }
 
-.contact h3{
-  margin: 20px 0 5px;
-  text-transform: uppercase;
-  color: rgb(172, 66, 101);
+.contact h3 {
+	margin: 20px 0 5px;
+	text-transform: uppercase;
+	color: var(--hero-text-color);
 }
+
+
+ .subpage  {
+	display:flex;
+	justify-content: space-around;
+	background-color:#eec0c6;
+	color: var(--hero-text-color);
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: bold;
+	}
+
+	.productSP ~p {
+		text-align: justify;
+		line-height: 30px;
+	}
+
 
 /* footer  */
 footer {
-  text-align: center;
-  padding: 30px 10px;
-  background-color: #eec0c6;
+	text-align: center;
+	padding: 30px 10px;
+	background-color: #eec0c6;
+	color: var(--hero-text-color);
 }
-
 
 /* media  */
 
@@ -191,6 +240,10 @@ footer {
 		display: none;
 	}
 	.nav-items {
+		display: block;
+	}
+
+	.subpage.nav-items {
 		display: block;
 	}
 
@@ -203,13 +256,27 @@ footer {
 		transition: color 0.3s;
 	}
 
+	.subpage.nav-items a {
+		padding: 0 30px;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: rgb(187, 88, 121);
+		transition: color 0.3s;
+	}
+
+
 	.nav-items a:hover {
 		color: rgb(138, 23, 61);
 	}
 
+	.subpage.nav-items a:hover {
+		color: rgb(138, 23, 61);
+	}
+
+
 	.header {
 		height: 400px;
-
 		background-image: url('../img/baby-hand-big.jpg');
 		background-size: cover;
 		background-position: center;
@@ -222,25 +289,28 @@ footer {
 		font-size: 18px;
 	}
 
-  .product h3 {
-   font-size: 24px;
+	.product h3 {
+		font-size: 24px;
+	}
 }
-}
+
+
+
+
 
 @media (min-width: 992px) {
-
-  .products-box {
-    font-size: 0;
-  }
+	.products-box {
+		font-size: 0;
+	}
 	.product {
-    display: inline-block;
-    width: 50%;
-  }
+		display: inline-block;
+		width: 50%;
+	}
 
-  .product-mama{
-    display: inline-block;
-    width: 100%;
-  }
+	.product-mama {
+		display: inline-block;
+		width: 100%;
+	}
 }
 
 @media (min-width: 1200px) {
@@ -250,9 +320,7 @@ footer {
 	.hero-text p {
 		font-size: 21px;
 	}
-  .header {
-    height: 500px;
-  }
+	.header {
+		height: 500px;
+	}
 }
-
-
