@@ -9,31 +9,40 @@
   <meta name="description" content="Parentingowa strona internetowa">
 
   <title>BobasoweLove</title>
-  
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet">
+
   <link rel="stylesheet" href="./css/style.css">
   <script src="https://kit.fontawesome.com/208f653354.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-  <nav>
 
-    <div class="wrapper">
-      <button class="burger-icon"><i class="fa-solid fa-bars"></i></button>
-      <div class="nav-items">
-        <a href="#">home</a>
-        <a href="#about-us">o mnie</a>
-        <a href="#mama">mama</a>
-        <a href="#dzieci">dzieci</a>
-        <a href="#contact">kontakt</a>
+  <nav class="navbar navbar-expand-lg position-sticky top-0 w-100 py-3">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="fa-solid fa-heart"></i> Bobasowe<span>LOVE</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#about-us">o mnie</a>
+          <a class="nav-link" href="#mama">mama</a>
+          <a class="nav-link" href="#dzieci">dzieci</a>
+          <a class="nav-link" href="#contact">kontakt</a>
         </div>
+      </div>
     </div>
-
   </nav>
+
+
   <header class="header">
     <div class="hero-bg"></div>
     <div class="hero-text">
@@ -45,16 +54,11 @@
 
     <section class="about-us wrapper" id="about-us">
       <h2 class="section-title">o mnie</h2>
-      <p class="about-us-info">Jestem mamą 6 letniej Misi, a już wkrótce nasza rodzina się powiększy i dołączy do nas
-        maleńka Blanka.</p>
-      <p class="about-us-info">Bardzo lubię spędzać czas z moją córką, ale cenie sobie też czas dla siebie, w ciszy i
-        spokoju z dobrą książką i smaczną kawą.</p>
-      <p class="about-us-info">Spacery, aktywność fizyczna, treningi z YouTube bo na wyjścia na siłownie nie mam już
-        czasu, to również moja ulubiona forma spędzania czasu wolnego.</p>
-      <p class="about-us-info">Śledzę nowości książkowe, szczególnie te, które mogą zainteresować moją 6 letnią córkę, a
-        niebawem wrócę do propozycji dla najmłodszych :). </p>
-      <p class="about-us-info">Szukam pomysłów na kreatywne zabawy, eksperymenty, aby pokazwyać mojej córce świat w
-        ciekawy sposób.</p>
+      <p class="about-us-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio dicta ipsum tempora natus numquam necessitatibus nemo debitis iure esse mollitia libero neque accusamus vero, consequuntur ab reprehenderit nihil culpa voluptas.</p>
+      <p class="about-us-info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius alias, voluptatibus consectetur exercitationem repudiandae aspernatur! Ex quod dolorem saepe dicta.</p>
+      <p class="about-us-info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum dignissimos quam accusamus perspiciatis harum molestiae aperiam mollitia ipsa. Quidem dicta, facere eveniet dolores velit delectus.</p>
+      <p class="about-us-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore accusantium quos natus possimus obcaecati ipsum consequuntur velit qui dolores officiis! </p>
+      <p class="about-us-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores facere officia quae ea molestias sint?</p>
     </section>
 
     <section class="products wrapper" id="mama">
@@ -62,8 +66,15 @@
       <div class="product mama product-mama">
         <div class="hero-bg"></div>
         <div class="hero-text">
-          <h3></h3>
           <p>„Czasem, gdy potrzebuję cudu, patrzę w oczy swojego dziecka i wiem, że już go stworzyłam”.</p>
+        </div>
+
+        <div class="">
+          <div class="hero-text-mama">
+            <a href="mama.html">
+              <h3>mama</h3>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -73,34 +84,40 @@
       <h2 class="section-title">dzieci</h2>
       <div class="products-box">
 
-
         <div class="product dzieci noworodek">
-
-          <!-- <a href="noworodek.html"><img src="./img/noworodek small.jpg" alt=""></a> -->
           <div class="hero-bg"></div>
           <div class="hero-text-dzieci">
-            <a href="noworodek.html"><h3>noworodek</h3></a>
+            <a href="noworodek.html">
+              <h3>noworodek</h3>
+            </a>
           </div>
         </div>
 
         <div class="product dzieci niemowlak">
           <div class="hero-bg"></div>
           <div class="hero-text-dzieci">
-            <a href="niemowlak.html"><h3>niemowlak</h3></a>
+            <a href="niemowlak.html">
+              <h3>niemowlak</h3>
+            </a>
           </div>
         </div>
 
         <div class="product dzieci dziecko1-3">
+          <div class="colorix"></div>
           <div class="hero-bg"></div>
           <div class="hero-text-dzieci">
-            <a href="dzieci1-3.html"><h3>dzieci 1-3</h3></a>
+            <a href="dzieci1-3.html">
+              <h3>dzieci 1-3</h3>
+            </a>
           </div>
         </div>
 
         <div class="product dzieci dziecko3-5">
           <div class="hero-bg"></div>
           <div class="hero-text-dzieci">
-            <a href="dzieci3-5.html"><h3>dzieci 3-5</h3></a>
+            <a href="dzieci3-5.html">
+              <h3>dzieci 3-5</h3>
+            </a>
           </div>
         </div>
 
@@ -113,7 +130,7 @@
       <p> <i class="fas fa-phone"></i> +48 000 000 000</p>
       <p> <i class="fas fa-at"></i> mail@mail.pl</p>
       <h3>Adres</h3>
-      <p>u. Sezamkowa 1</p>
+      <p>ul. Sezamkowa 1</p>
       <p>00-000 Nibylandia</p>
 
 
@@ -122,9 +139,10 @@
 
   </main>
   <footer>
-    <p>&copy, 2024 BobasoweLove</p>
+    <p>&copy; 2024 | Dorota Głowacka</p>
   </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
